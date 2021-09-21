@@ -10,7 +10,15 @@ const PostForm = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    let d = new Date();
+    d = new Date(d);
     console.log(`YOu have posted ${enteredPost}`);
+    const postData ={
+      post: enteredPost,
+      date: d.toString()
+
+    }
+    console.log(postData)
     setEnteredPost("");
   };
   return (
