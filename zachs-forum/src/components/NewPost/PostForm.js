@@ -1,6 +1,6 @@
 //test
 import React, { useState } from "react";
-const PostForm = () => {
+const PostForm = (props) => {
   const [enteredPost, setEnteredPost] = useState("");
 
   const postChangeHandler = (event) => {
@@ -14,12 +14,14 @@ const PostForm = () => {
     d = new Date(d);
     console.log(`YOu have posted ${enteredPost}`);
     const postData ={
+      id: Math.random()*100,
       post: enteredPost,
       date: d.toString()
 
     }
     console.log(postData)
     setEnteredPost("");
+    props.onAddPost(postData); //this feeds data to App.js
   };
   return (
     <form onSubmit={submitHandler}>
