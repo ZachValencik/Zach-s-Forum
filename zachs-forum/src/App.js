@@ -4,12 +4,12 @@ import React, { useState } from "react";
 const DUMMY_POSTS = [
   {
     id: 1,
-    post: "Toilet Paper",
+    post: "Dummy Data",
     date: new Date(2020, 7, 14),
   },
   {
     id: 2,
-    post: "New Desk (Wooden)",
+    post: "Dummy Data #2",
     date: new Date(2021, 5, 12),
   },
 ];
@@ -24,6 +24,7 @@ const App = () => {
     SetPosts((prevPosts) => {
       return [post, ...prevPosts];
     });
+
   };
   return (
     <div>

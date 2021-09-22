@@ -20,8 +20,9 @@ const PostForm = (props) => {
 
     }
     console.log(postData)
-    setEnteredPost("");
+    
     props.onAddPost(postData); //this feeds data to App.js
+    setEnteredPost("");
   };
   return (
     <form onSubmit={submitHandler}>

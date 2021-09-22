@@ -1,7 +1,17 @@
-const Posts = () => {
+import PostItem from './PostItem'
+const Posts = (props) => {
   return (
     <div>
-      <h3>From Posts.js</h3>
+     <ul className="expenses-list">
+      {props.post.map((p) => (
+        <PostItem
+          key={p.id}
+          post={p.post}
+          date={p.date}
+        />
+      ))}
+    </ul>
+      
     </div>
   );
 };
