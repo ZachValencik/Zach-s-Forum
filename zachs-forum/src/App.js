@@ -28,7 +28,6 @@ const App = () => {
   };
   return (
     <div>
-      <h2>Testing!!!</h2>
       <Posts post={posts} />
       <PostForm onAddPost={addPostHandler} />
     </div>
