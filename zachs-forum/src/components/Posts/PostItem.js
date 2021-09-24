@@ -1,9 +1,7 @@
 const PostItem = (props) => {
   return (
     <li>
-      <div>
-        <h2>{props.post}</h2>
-      </div>
+      <div><p>{props.post}</p></div>
     </li>
   );
 };

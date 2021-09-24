@@ -19,12 +19,9 @@ const App = () => {
   const addPostHandler = (post) => {
     console.log(`This is data from PostForm.js in App.js ${post}`);
     console.log(posts);
-    //console.log("in APp.js")
-    // console.log(expense); // this data started from expenseForm then went to New Expenses then finally here to app.js
     SetPosts((prevPosts) => {
       return [post, ...prevPosts];
     });
-
   };
   return (
     <div>
