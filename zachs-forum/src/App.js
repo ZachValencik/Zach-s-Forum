@@ -28,6 +28,7 @@ const App = () => {
   };
   return (
     <div>
+      <h2>Zachs Posts!</h2>
       <Posts post={posts} />
       <PostForm onAddPost={addPostHandler} />
     </div>
